@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "BASE_PATH=/nextjs next build && next export",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "export": "next export"
   },
   "dependencies": {
+    "@types/video.js": "^7.3.3",
+    "hls.js": "^0.13.2",
     "isomorphic-unfetch": "3.0.0",
+    "mediaelement": "^4.2.16",
     "next": "latest",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-jw-player": "^1.19.1",
+    "video.js": "^7.6.6",
+    "videojs-youtube": "^2.6.1"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
