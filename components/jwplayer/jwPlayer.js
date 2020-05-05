@@ -40,7 +40,7 @@ class ReactJWPlayerContainer extends React.Component {
           onReady={this.onReady}
           onVideoLoad={this.onVideoLoad}
           playerId={this.props.playerId} // bring in the randomly generated playerId
-          playerScript='https://cdn.jwplayer.com/libraries/tN3fn5Dj.js'
+          playerScript='https://cdn.jwplayer.com/libraries/Z476fpvk.js'
           customProps={this.props.config}
           aspectRatio='16:9'
         />

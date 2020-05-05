@@ -1,5 +1,6 @@
 import React from 'react'
 import VideojsPlayer from '../../components/videojs/VideojsPlayer'
+import VideojsControls from '../../components/videojs/VideojsControls'
 import videojs, { VideoJsPlayerOptions } from 'video.js';
 
 type MyProps = {
@@ -20,7 +21,7 @@ export default class Index extends React.Component<MyProps, MyState> {
     const videoJsOptions: VideoJsPlayerOptions = {
       techOrder: ['html5'],
       autoplay: false,
-      controls: true,
+      controls: false,
       sources: [
             {
             src: 'https://os-test-public.s3-us-west-2.amazonaws.com/video01/output/59_attitude01.hr.m3u8',
@@ -40,6 +41,7 @@ export default class Index extends React.Component<MyProps, MyState> {
     return (
         <React.Fragment>
             <VideojsPlayer {...videoJsOptions} onReady={onReady} />
+            {this.state.videoPlayerReady && <VideojsControls player={this.player} /> }
         </React.Fragment>
     );
   }

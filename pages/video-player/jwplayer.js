@@ -14,7 +14,7 @@ export default class JwTest extends React.Component {
       file: 'https://os-test-public.s3-us-west-2.amazonaws.com/video01/output/59_attitude01.hr.m3u8',
     }];
 
-    this.playerId = `${Math.floor(Math.random()*10000)}`;
+    this.playerId = `p${Math.floor(Math.random()*10000)}`;
     const onReady = (player) => {
       this.setState({
         player: window.jwplayer(this.playerId),

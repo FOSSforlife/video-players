@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "BASE_PATH=/nextjs next build && next export",
+    "build:local": "next build && next export",
     "start": "next start",
     "type-check": "tsc",
     "export": "next export"
@@ -13,7 +14,7 @@
     "hls.js": "^0.13.2",
     "isomorphic-unfetch": "3.0.0",
     "mediaelement": "^4.2.16",
-    "next": "latest",
+    "next": "^9.3.1",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
